@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Loan Application Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Home Loan Application Registration</h2>
+    <label for="full_name">Full Name</label>
+    <input type="text" id="full_name" name="full_name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+
+    <label for="loan_amount">Loan Amount</label>
+    <input type="number" id="loan_amount" name="loan_amount" required>
+
+    <label for="loan_term">Loan Term (Years)</label>
+    <select id="loan_term" name="loan_term" required>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+    </select>
+
+    <label for="credit_score">Credit Score</label>
+    <input type="number" id="credit_score" name="credit_score" required>
+
+    <input type="submit" value="Submit Application">
+  </form>
+</body>
+</html>
