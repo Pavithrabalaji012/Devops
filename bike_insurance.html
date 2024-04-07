@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Insurance Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Bike Insurance Registration</h2>
+    <label for="owner_name">Owner Name</label>
+    <input type="text" id="owner_name" name="owner_name" required>
+
+    <label for="bike_model">Bike Model</label>
+    <input type="text" id="bike_model" name="bike_model" required>
+
+    <label for="registration_number">Registration Number</label>
+    <input type="text" id="registration_number" name="registration_number" required>
+
+    <label for="insurance_type">Insurance Type</label>
+    <select id="insurance_type" name="insurance_type" required>
+      <option value="third_party">Third Party</option>
+      <option value="comprehensive">Comprehensive</option>
+    </select>
+
+    <label for="expiry_date">Expiry Date</label>
+    <input type="date" id="expiry_date" name="expiry_date" required>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
